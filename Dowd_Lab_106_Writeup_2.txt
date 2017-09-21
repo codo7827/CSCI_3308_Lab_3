@@ -1,0 +1,43 @@
+Connor Dowd
+7 Sept, 2017
+CSCI 3308 Lab 106
+
+Lab Writeup #2
+Responses
+
+Step 2:
+- Added: Jackfruit; Removed: Cranberry, Nectarine, Prickly Pear
+- '<' indicates that the line was moved in the old version,
+  '>' indicates that the line was added to the new version [of the file]
+- '-c' shows the context of the changes made from the old version of the file to the new version (i.e. the lines surrounding the changes line(s))
+
+Step 3:
+- wc -l testPasswd.txt
+- wc -m testPasswd.txt
+
+Step 4:
+- use command ' cut -d : -f 1 testPasswrd.txt '
+- awk '{print $2, $4}' grades.txt
+
+Step 5:
+- commandwise, cut -d : -f 4 testPasswrd.txt | sort -h | uniq
+- [command above] /home/user/file2.txt //chmod to change permissions, though 
+- cut -d : -f 1 testPasswd.txt | grep ^[mws]
+
+Step 6:
+- sed 's/[a-z]//g' leetSpeak.txt
+- sed 's/[0-9]//g' leetSpeak.txt
+- sed 's/[0-9/_/g' leetSpeak.txt
+- sed 's/0/o/g;s/1/i/g;s/3/e/g;s/4/a/g;s/5/s/g;s/7/t/g' leetSpeak.txt
+- Make the filename a sort of 'input variable', like those used in functions; this could be done by typing the nameo fthe file after the .sh and also adding a placement item in the .sh for the input
+
+Step 7:
+- awk '{print $1, $2, (($4+$5+$6+$7)/4)*100"%";}' grades.txt
+- awk '{count=count+$4}END{print count/7}' grades.txt 
+
+Step 8:
+- grep [0-9][0-9][0-9]- regex_practice_data.txt -c; 770 instances
+- grep 303-441- regex_practice_data.txt -c; 51 instances
+- grep .com regex_practice_data.txt -c; 17227 addresses
+- grep .gov regex_practice_data.txt -c; 58 addresses
+- grep ^[a-m].[a-z]@ regex_practice_data.txt -c; 1332 addresses
