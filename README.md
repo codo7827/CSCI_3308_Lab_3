@@ -6,7 +6,7 @@ Partner: Tyler Bagala
 Assignment: Recitation Lab #4
 
 AAA
-I bet this one wont.
+I bdet this one wont.
 This is a further edit.
 This might cause a merge conflict.
 
